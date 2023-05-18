@@ -1,0 +1,24 @@
+{
+  "name": "ichatapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anygeekyee/ichatapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anygeekyee/ichatapi/issues"
+  },
+  "homepage": "https://github.com/anygeekyee/ichatapi#readme",
+  "dependencies": {
+    "koa": "^2.14.2",
+    "nodemon": "^2.0.22"
+  }
+}
