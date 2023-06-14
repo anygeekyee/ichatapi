@@ -1,10 +1,10 @@
-const Router = require('koa-router')
+import Router from 'koa-router'
+import Controller from '../controller/bot.controller.js'
 
-const {register, get} = require('../controller/bot.controller')
 const router = new Router({ prefix: '/bot'})
 
-router.get('/', get)
+router.get('/', Controller.get)
 
-router.post('/register', register)
+router.post('/register', Controller.register)
 
-module.exports = router
+export default router

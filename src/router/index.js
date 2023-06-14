@@ -1,4 +1,4 @@
-const Router = require('koa-router')
+import Router from 'koa-router'
 
 const indexRouter = new Router()
 
@@ -6,4 +6,4 @@ indexRouter.get('/', (ctx, next)=>{
     ctx.body = 'hello island'
 })
 
-module.exports = indexRouter
+export default indexRouter

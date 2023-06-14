@@ -7,4 +7,4 @@ class BotController {
     }
 }
 
-module.exports = new BotController()
+export default new BotController()

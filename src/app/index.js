@@ -1,9 +1,10 @@
-const Koa = require('koa')
+import Koa from 'koa'
+import botRouter from '../router/bot.route.js'
+import indexRouter from '../router/index.js'
+
 const app = new Koa()
 
-const botRouter = require('../router/bot.route')
-const indexRouter = require('../router/index')
 app.use(botRouter.routes())
    .use(indexRouter.routes())
 
-module.exports = app
+export default app
