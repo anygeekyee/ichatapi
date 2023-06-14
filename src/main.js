@@ -1,9 +1,7 @@
-const Koa = require('koa')
-const app = new Koa()
+import env from '#config/config.default.js'
+import app from '#app/index.js'
+// const app = require('./app')
 
-app.use((ctx, next) => {
-    ctx.body = 'hello world'
-})
-app.listen(3000, ()=>{
-    console.log('server is running on http://localhost:3000')
+app.listen(env.APP_PORT, ()=>{
+    console.log(`server is running on http://localhost:${env.APP_PORT}`)
 })
