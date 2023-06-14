@@ -1,5 +1,5 @@
-import env from './config/config.default.js'
-import app from './app/index.js'
+import env from '#config/config.default.js'
+import app from '#app/index.js'
 // const app = require('./app')
 
 app.listen(env.APP_PORT, ()=>{

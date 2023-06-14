@@ -1,6 +1,6 @@
 import Koa from 'koa'
-import botRouter from '../router/bot.route.js'
-import indexRouter from '../router/index.js'
+import botRouter from '#router/bot.route.js'
+import indexRouter from '#router/index.js'
 
 const app = new Koa()
 

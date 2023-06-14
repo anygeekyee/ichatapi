@@ -1,5 +1,5 @@
 import Router from 'koa-router'
-import Controller from '../controller/bot.controller.js'
+import Controller from '#controller/bot.controller.js'
 
 const router = new Router({ prefix: '/bot'})
 
