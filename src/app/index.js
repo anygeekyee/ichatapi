@@ -1,10 +1,10 @@
 import Koa from 'koa'
-import botRouter from '#router/bot.route.js'
-import indexRouter from '#router/index.js'
+import allRouters from '#router/index.js'
 
 const app = new Koa()
 
-app.use(botRouter.routes())
-   .use(indexRouter.routes())
+allRouters.forEach(route => {
+    app.use(route.routes())
+});
 
 export default app

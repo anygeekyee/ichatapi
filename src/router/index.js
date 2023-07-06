@@ -1,9 +1,7 @@
-import Router from 'koa-router'
+import botRoute from './bot.route.js'
+import home from './home.js'
 
-const indexRouter = new Router()
-
-indexRouter.get('/', (ctx, next)=>{
-    ctx.body = 'hello island'
-})
-
-export default indexRouter
+export default [
+    botRoute('/bot'),
+    home('/')
+]
