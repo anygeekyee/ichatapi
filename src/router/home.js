@@ -1,9 +1,9 @@
 import Router from 'koa-router'
 
-const router = new Router()
-
-router.get('/', (ctx, next)=>{
-    ctx.body = 'hello island'
-})
-
-export default router
+export default function(prefix) {
+    const router = new Router({ prefix: prefix})
+    router.get('/', (ctx, next)=>{
+        ctx.body = 'hello island'
+    })
+    return router
+}

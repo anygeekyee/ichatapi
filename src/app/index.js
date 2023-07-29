@@ -4,11 +4,14 @@ import { WechatyBuilder } from "wechaty";
 import qrcodeTerminal from "qrcode-terminal";
 
 const app = new Koa();
-
+allRouters.forEach(route => {
+  app.use(route.routes())
+})
 // 创建一个微信机器人实例
 const bot = WechatyBuilder.build({
   name: "ichatapi",
   puppet: "wechaty-puppet-wechat",
+
 });
 
 async function onScan(qrcode, status) {
@@ -43,9 +46,5 @@ bot
     await bot.stop();
     process.exit(1);
   });
-
-allRouters.forEach((route) => {
-  app.use(route.routes());
-});
 
 export default app;
