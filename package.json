@@ -29,6 +29,7 @@
   "type": "module",
   "imports": {
     "#app/*": "./src/app/*",
+    "#listeners/*": "./src/listeners/*",
     "#config/*": "./src/config/*",
     "#controller/*": "./src/controller/*",
     "#router/*": "./src/router/*",
