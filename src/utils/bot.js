@@ -13,12 +13,14 @@ const bot = WechatyBuilder.build({
 
 // 设置 Wechaty 事件监听器
 bot
-  .on("scan", onScan)
-  .on("login", onLogin)
-  .on("logout", onLogout)
-  .on("message", onMessage)
+.on("scan", onScan)
+.on("login", onLogin)
+.on("logout", onLogout)
+.on("message", onMessage)
 
-bot
+
+// 机器人api启动机器人，可在发起start时调用
+/* bot
   .start()
   .then(() => {
     console.log("开始登陆微信");
@@ -27,4 +29,6 @@ bot
     console.log(err);
     //   await bot.stop();
     //   process.exit(1);
-  });
+  }); */
+
+export default bot

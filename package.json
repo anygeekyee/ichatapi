@@ -33,6 +33,6 @@
     "#config/*": "./src/config/*",
     "#controller/*": "./src/controller/*",
     "#router/*": "./src/router/*",
-    "#wechaty/*": "./src/wechaty/*"
+    "#utils/*": "./src/utils/*"
   }
 }
