@@ -4,8 +4,8 @@ import Controller from '#controller/bot.controller.js'
 export default function(prefix) {
     const router = new Router({ prefix: prefix})
 
-    router.post('/start', Controller.startBot)
+    router.post('/start', Controller.start)
 
-    router.post('/stop', Controller.stopBot)
+    router.post('/stop', Controller.stop)
     return router
 }
