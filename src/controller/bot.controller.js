@@ -2,39 +2,39 @@ import bot from "#utils/bot.js"
 
 class BotController {
     // 机器人启动
-    async startBot(ctx, next) {
+    async start(ctx, next) {
         const response = {
             status: "Success",
             error: ""
         }
         // console.log("receive start bot")
-        await bot.start()
-           .then(() => {
-          })
-          .catch((err) => {
+        try {
+          await bot.start()
+        } catch (err) {
             console.log(err);
             response.status = "Failure"
             response.error = err
-          });
-        ctx.body = response
+        } finally {
+          ctx.body = response
+        }
     }
 
      // 机器人停止
-    async stopBot(ctx, next) {
+    async stop(ctx, next) {
         // console.log("receive stop bot")
         const response = {
             status: "Success",
             error: ""
         }
-        await bot.stop()
-           .then(() => {
-          })
-          .catch((err) => {
+        try {
+          await bot.stop()
+        } catch (err) {
             console.log(err);
             response.status = "Failure"
             response.error = err
-          });
-        ctx.body = response
+        } finally {
+          ctx.body = response
+        }
     }
 }
 
