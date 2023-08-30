@@ -21,14 +21,18 @@
     "dotenv": "^16.1.4",
     "koa": "^2.14.2",
     "koa-router": "^12.0.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^1.20.2",
+    "wechaty-puppet-wechat": "^1.18.4"
   },
   "type": "module",
   "imports": {
     "#app/*": "./src/app/*",
+    "#listeners/*": "./src/listeners/*",
     "#config/*": "./src/config/*",
     "#controller/*": "./src/controller/*",
     "#router/*": "./src/router/*",
-    "#wechaty/*": "./src/wechaty/*"
+    "#utils/*": "./src/utils/*"
   }
 }
