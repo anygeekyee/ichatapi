@@ -10,7 +10,8 @@
 ├─config      ---- 配置项模块
 ├─controller  ---- 控制器模块，请求处理
 ├─router      ---- 路由模块
-└─wechaty     ---- wechaty机器人接入模块
+├─test        ---- 测试模块
+└─util        ---- 公共应用模块
 ```
 
 
